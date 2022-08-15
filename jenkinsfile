@@ -1,1 +1,12 @@
+pipeline {
+  agent any
+      stages {
+        stage('BUILD') {
+          steps {
+            git branch: 'main', url: 'https://github.com/vinay542486/testrepo.git'
+          }
+        }
+      }
+}
+
 
